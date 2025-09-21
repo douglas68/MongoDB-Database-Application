@@ -1,0 +1,27 @@
+{
+  "name": "mongodb-database-application",
+  "version": "1.0.0",
+  "description": "SBA 319",
+  "main": "server.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.mjs",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/douglas68/MongoDB-Database-Application.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/douglas68/MongoDB-Database-Application/issues"
+  },
+  "homepage": "https://github.com/douglas68/MongoDB-Database-Application#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.18.1"
+  }
+}
