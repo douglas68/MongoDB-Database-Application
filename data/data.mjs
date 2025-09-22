@@ -24,7 +24,7 @@ export const goal = [
   { userEmail: "devon@example.com",  title: "Daily reflection",     targetPerWeek: 7, active: true }
 ];
 
-export const checkins = [
+export const checkin = [
   { userEmail: "ashley@example.com", date: "2025-09-22", mood: 4, notes: "Long walk + water" },
   { userEmail: "mika@example.com",   date: "2025-09-22", mood: 3, notes: "Busy but okay" },
   { userEmail: "jordan@example.com", date: "2025-09-21", mood: 5, notes: "Great workout" },
@@ -37,7 +37,7 @@ export const checkins = [
   { userEmail: "devon@example.com",  date: "2025-09-18", mood: 3, notes: "Walked at lunch" }
 ];
 
-export const reflections = [
+export const reflection = [
   { userEmail: "ashley@example.com", weekStartISO: "2025-09-15", text: "Better sleep; walks helped." },
   { userEmail: "mika@example.com",   weekStartISO: "2025-09-15", text: "Work stress manageable by midweek." },
   { userEmail: "jordan@example.com", weekStartISO: "2025-09-15", text: "Exercise boosted mood a lot." },

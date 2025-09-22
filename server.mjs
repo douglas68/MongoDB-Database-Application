@@ -15,7 +15,7 @@ const app = express();
 const PORT = process.env.Port || 3001;
 
 //DB Connection
-connectDB();
+connectionDB ();
 
 //Middleware
 app.use(express.json());
@@ -23,10 +23,10 @@ app.use(log);
 
 
 //Routes
-app.use("/api/user", userRoutes);
+app.use("/api/users", userRoutes);
 app.use("/api/checkinRoutes", checkinRoutes);
-app.use("/api/goal", goalRoutes);
-app.use("/api/reflection", reflectionRoutes);
+app.use("/api/goals", goalRoutes);
+app.use("/api/reflections", reflectionRoutes);
 
 //Error Handle Middlware
 app.use(globalErr);

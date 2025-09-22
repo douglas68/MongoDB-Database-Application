@@ -8,4 +8,4 @@ const reflectionSchema = new mongoose.Schema ({
 
 reflectionSchema.index({ userId: 1, weekStartISO: 1 }, { unique: true });
 
-export default mongoose.model("Reflection", reflectionsSchema);
+export default mongoose.model("Reflection", reflectionSchema);
