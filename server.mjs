@@ -2,6 +2,11 @@ import express from "express";
 import dotenv from "dotenv";
 import log from "./middleware/loggingMiddleware.mjs";
 import globalErr from "./middleware/globalerr.mjs";
+import connectionDB from "./db/conn.mjs";
+import checkinRoutes from "./routes/checkinRoutes.mjs";
+import goalRoutes from "./routes/goalRoutes.mjs";
+import reflectionRoutes from "./routes/reflectionRoutes.mjs";
+import userRoutes from "./routes/userRoutes.mjs";
 
 
 //Setup
@@ -18,7 +23,10 @@ app.use(log);
 
 
 //Routes
-
+app.use("/api/user", userRoutes);
+app.use("/api/checkinRoutes", checkinRoutes);
+app.use("/api/goal", goalRoutes);
+app.use("/api/reflection", reflectionRoutes);
 
 //Error Handle Middlware
 app.use(globalErr);
