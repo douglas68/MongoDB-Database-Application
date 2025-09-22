@@ -32,7 +32,7 @@ router.get("/reflections/:id", async (req, res) => {
 //Post
 router.post("/reflections", async (req, res) => {
   try {
-    const created = await Reflection.create(req.body); // expects { userId, weekStartISO, text }
+    const created = await Reflection.create(req.body); 
     res.status(201).json(created);
   } catch (err) {
     if (err?.code === 11000) {
